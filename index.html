@@ -1,0 +1,84 @@
+ 
+<html>
+  <head>
+    <title>Family Members Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class="btn btn-default heading">Family Members Recognition</h3>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following family members:</p>
+      <b class="name_of_objects">
+        <button onclick="me()" class="member btn btn-primary">Me</button>
+        <br>
+        <br>
+        <img src="Me.jpg" id="me" style="display: none;"  class="img">
+        <br>
+        <button onclick="sis()" class="member btn btn-primary">Sister</button>
+        <br>
+        <br>
+        <img src="Paru.jpg" style="display: none;"  id="sis"  class="img">
+        <br>
+        <button onclick="mom()" class="member btn btn-primary">Mother</button>
+        <br>
+        <br>
+        <img src="20150613_125739-1.jpg" style="display: none;" id="mom"  class="img">
+        <br>
+        <button onclick="dad()" class="member btn btn-primary">Father</button>
+        <br>
+        <br>
+        <img src="IMG_0233.JPG" style="display: none;" id="dad"  class="img">
+        <br>
+        <button onclick="grandma()" class="member btn btn-primary">Grand Mother</button>
+        <br>
+        <br>
+        <img src="Prabha.JPG" style="display: none;" id="grandma"  class="img">
+        <br>
+        <button onclick="grandpa()" class="member btn btn-primary">Grand Father</button>
+        <br>
+        <br>
+        <img src="VKC.jpg" style="display: none;" id="grandpa" class="img">
+
+      </b>
+      <br>
+
+      <label>Webcam View - </label>
+      <div id="camera"></div>
+
+      <br><br>
+      <div id="result"></div>
+
+
+      <br><br>
+      <button onclick="take_snapshot()" class="btn btn-info"> Capture Image</button>
+
+      <br><br>
+      <button onclick="check()" class="btn btn-success"> Identify Image</button>
+
+      <br><br>
+
+      <p style="font-size: 22px; color: rgb(250, 250, 20);">Member :<span id="result_member_name"></span></p>
+      <p style="font-size: 22px; color: rgb(250, 250, 20);">Accuracy :<span id="result_member_accuracy"></span>  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

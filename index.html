@@ -8,6 +8,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 
    <link rel="stylesheet" href="style.css">
   
@@ -17,6 +18,7 @@
   <div class="container">
     
     <center>
+      <a href="" id="link" download="Image.png"></a>
       <h3 class="btn btn-default heading">Family Members Recognition</h3>
 
       <br><br>
@@ -68,6 +70,9 @@
 
       <br><br>
       <button onclick="check()" class="btn btn-success"> Identify Image</button>
+
+      <br><br>
+      <button onclick="download()" class="btn btn-warning">  Download Captured Image</button>
 
       <br><br>
 

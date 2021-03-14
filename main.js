@@ -56,3 +56,20 @@ function download(){
     link.href=image;
     link.click();
 }
+function modelLoaded(){
+    console.log("Model Loaded");
+}
+function check(){
+    img=document.getElementById("image");
+    classifier.classify(img,getresult);
+}
+function getresult(error,results){
+    if(error){
+        console.log(error);
+    }
+    else{
+        console.log(results);
+        document.getElementById("result_member_name").innerHTML=results[0].label;
+        document.getElementById("result_member_accuracy").innerHTML=results[0].confidence.toFixed(2)+"%";
+    }
+}
